@@ -30,7 +30,9 @@ body {
 }
 .header-inner {
   display:flex; align-items:center; justify-content: space-between;
-  padding: 8px 0; /* slim header */
+  align-items: center;
+  justify-content: space-between; /* keep brand left, nav right */
+  padding: 8px 0;
 }
 .brand {
   display: flex;
@@ -63,9 +65,23 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* spacing between links */
+}
 
-.nav a { color: var(--text); text-decoration:none; margin: 0 8px; font-size:14px; opacity:0.9; }
-.nav a:hover { opacity:1; }
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.9;
+  transition: color 0.2s ease;
+}
+.nav a:hover {
+  opacity: 1;
+  color: var(--brand); /* highlight on hover */
+}
 .theme-toggle { margin-left: 8px; padding:6px 10px; border-radius: 10px; border:1px solid var(--border); background: var(--card); color: var(--text); cursor:pointer; }
 
 /* ===== Hero ===== */
