@@ -39,7 +39,7 @@ const PROJECTS = [
   {
     title: "Twi Speech-to-Text Fine-Tuning",
     category: "NLP",
-    img: "assets/twi_project.jpg",
+    img: "assets/twi.png",
     blurb: "Fine-tuned wav2vec2.0 for Twi, achieving strong performance on a low-resource Ghanaian dialect.",
     tags: ["Speech Recognition", "Low-resource NLP"],
     badges: ["WER 16.8%", "20h speech data"],
