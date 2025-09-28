@@ -4,12 +4,12 @@ const PROJECTS = [
     title: "Consilience: Real-time ASR + RAG for Interdisciplinary Meetings",
     category: "NLP",
     img: "assets/consilience.png.png", // replace with screenshot of your site
-    blurb: "A voice-based, conversational LLM assistant that transcribes multi-speaker conversations, performs RAG retrieval, and functions as a research translator.In collaboration with Duke Deep Tech and OpenAI."
+    blurb: "A voice-based, conversational LLM assistant that transcribes multi-speaker conversations, performs RAG retrieval, and functions as a research translator.In collaboration with Duke Deep Tech and OpenAI.",
     tags: ["LLMs", "RAG", "Speech-to-Text"],
     badges: [ "Ontology aligned"],
     links: {
       repo: "#", // optional
-      partnership link: "https://deeptech.duke.edu/news/deep-tech-duke-funds-four-ai-metascience-projects-through-openai-partnership/", 
+      partnership: "https://deeptech.duke.edu/news/deep-tech-duke-funds-four-ai-metascience-projects-through-openai-partnership/",
       case: "#"  // optional case study
     },
     details: `
