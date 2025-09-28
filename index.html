@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI/ML Portfolio — Tiffany Degbotse</title>
+  <meta name="description" content="AI/ML portfolio showcasing end-to-end projects, papers, and demos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">AI<span>·</span>ML</div>
+        <div class="name-role">
+          <h1 id="your-name">Tiffany Degbotse</h1>
+          <p>Machine Learning Engineer • NLP/LLMs • Computer Vision • MLOps</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h2>Building reliable AI systems that ship.</h2>
+        <p>
+          I design and deploy end‑to‑end ML solutions—from data pipelines and modeling to
+          evaluation, UX, and productionization. I care about clarity, reproducibility, and measurable impact.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" target="_blank" rel="noopener" href="docs/Tiffany Degbotse CV.pdf">Resume ↗</a>
+          <a class="btn" target="_blank" rel="noopener" href="https://github.com/TiffanyDegbotse">GitHub ↗</a>
+          <a class="btn" target="_blank" rel="noopener" href="www.linkedin.com/in/tiffany-degbotse-1b464622b/">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num" id="statModels">25+</div>
+          <div class="stat-label">Models trained</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="statDeploys">8</div>
+          <div class="stat-label">Prod/Live demos</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="statAwards">3</div>
+          <div class="stat-label">Awards / wins</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h3>Flagship Projects</h3>
+        <div class="filters">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="NLP">NLP/LLMs</button>
+          <button class="chip" data-filter="CV">Vision</button>
+          <button class="chip" data-filter="TimeSeries">Time Series</button>
+          <button class="chip" data-filter="MLOps">MLOps</button>
+        </div>
+      </div>
+      <div id="projectsGrid" class="grid"></div>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h3>Skills & Tools</h3>
+      <div class="skills-grid">
+        <div>
+          <h4>ML/DL</h4>
+          <ul>
+            <li>Supervised/Unsupervised, XGBoost, Random Forests</li>
+            <li>CNNs, Transformers, Sequence Models</li>
+            <li>Evaluation: ROC/AUC, F1, BLEU, MSE, SHAP</li>
+          </ul>
+        </div>
+        <div>
+          <h4>NLP/LLMs</h4>
+          <ul>
+            <li>RAG, vector search, embeddings</li>
+            <li>Fine-tuning, LoRA, prompt engineering</li>
+            <li>Speech: ASR/diarization</li>
+          </ul>
+        </div>
+        <div>
+          <h4>MLOps</h4>
+          <ul>
+            <li>Docker, CI/CD, experiment tracking</li>
+            <li>Monitoring, data/version control</li>
+            <li>Serving: FastAPI, Streamlit, Gradio</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Data/Systems</h4>
+          <ul>
+            <li>SQL/NoSQL, Pandas/PySpark</li>
+            <li>APIs, scraping, pipeline orchestration</li>
+            <li>GPU training & optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="writing" class="section">
+    <div class="container">
+      <h3>Writing & Talks</h3>
+      <div id="writingList" class="list"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container contact">
+      <h3>Contact</h3>
+      <p>Open to internships and research collaborations. The fastest way to reach me is via email.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="mailto:youremail@example.com">Email me</a>
+        <a class="btn" href="https://cal.com/" target="_blank" rel="noopener">Book a call ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Your Name</span>
+      <span>Built with vanilla HTML/CSS/JS · Deployed on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-label="Project details">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
