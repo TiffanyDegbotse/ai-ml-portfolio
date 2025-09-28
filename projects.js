@@ -4,7 +4,7 @@ const PROJECTS = [
     title: "Consilience: Real-time ASR + RAG for Interdisciplinary Meetings",
     category: "NLP",
     img: "assets/consilience.png.png", // replace with screenshot of your site
-    blurb: "A real-time assistant that transcribes multi-speaker conversations, performs RAG retrieval, and surfaces action items live.",
+    blurb: "A voice-based, conversational LLM assistant that transcribes multi-speaker conversations, performs RAG retrieval, and functions as a research translator to surface action items live in interdisciplinary collaborations. Funded by Duke Deep Tech and OpenAI."
     tags: ["LLMs", "RAG", "Speech-to-Text"],
     badges: ["Live demo", "Ontology aligned"],
     links: {
