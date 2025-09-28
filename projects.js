@@ -42,11 +42,8 @@ const PROJECTS = [
     img: "assets/twi.png",
     blurb: "Fine-tuned wav2vec2.0 for Twi, achieving strong performance on a low-resource Ghanaian dialect.",
     tags: ["Speech Recognition", "Low-resource NLP"],
-    badges: ["WER 16.8%", "20h speech data"],
     links: {
-      repo: "https://github.com/your-username/twi-speech-to-text", 
-      demo: "#",
-      case: "#"
+      repo: "https://github.com/TiffanyDegbotse/Twi-transcription", 
     },
     details: `
       <p><strong>Overview:</strong> Curated and cleaned Twi audio dataset, applied fine-tuning on wav2vec2.0, and improved robustness with SpecAugment.</p>
