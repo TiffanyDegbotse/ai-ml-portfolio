@@ -6,7 +6,7 @@ const PROJECTS = [
     img: "assets/consilience.png.png", // replace with screenshot of your site
     blurb: "A voice-based, conversational LLM assistant that transcribes multi-speaker conversations, performs RAG retrieval, and functions as a research translator to surface action items live in interdisciplinary collaborations. Funded by Duke Deep Tech and OpenAI."
     tags: ["LLMs", "RAG", "Speech-to-Text"],
-    badges: ["Live demo", "Ontology aligned"],
+    badges: [ "Ontology aligned"],
     links: {
       repo: "#", // optional
       demo: "https://your-consilience-site-link.com", // replace with actual site link
