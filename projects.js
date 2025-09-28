@@ -47,7 +47,6 @@ const PROJECTS = [
     },
     details: `
       <p><strong>Overview:</strong> Curated and cleaned Twi audio dataset, applied fine-tuning on wav2vec2.0, and improved robustness with SpecAugment.</p>
-      <p><strong>Result:</strong> Achieved Word Error Rate (WER) of 16.8% across multiple dialects.</p>
       <p><em>Code and details available on GitHub.</em></p>
     `
   }
