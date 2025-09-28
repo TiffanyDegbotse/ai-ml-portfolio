@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
@@ -30,59 +31,61 @@
     </div>
   </header>
 
+  <!-- ===== Hero ===== -->
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
         <h2>Building reliable AI systems that ship.</h2>
         <p>
-          I design and deploy end‑to‑end ML solutions—from data pipelines and modeling to
+          I design and deploy end-to-end ML solutions—from data pipelines and modeling to
           evaluation, UX, and productionization. I care about clarity, reproducibility, and measurable impact.
         </p>
         <div class="cta-row">
           <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" target="_blank" rel="noopener" href="docs/Tiffany Degbotse CV.pdf">Resume ↗</a>
+          <a class="btn" target="_blank" rel="noopener" href="docs/Tiffany_Degbotse_CV.pdf">Resume ↗</a>
           <a class="btn" target="_blank" rel="noopener" href="https://github.com/TiffanyDegbotse">GitHub ↗</a>
-          <a class="btn" target="_blank" rel="noopener" href="www.linkedin.com/in/tiffany-degbotse-1b464622b/">LinkedIn ↗</a>
+          <a class="btn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/tiffany-degbotse-1b464622b/">LinkedIn ↗</a>
         </div>
       </div>
       <div class="hero-stats">
         <div class="stat">
-          <div class="stat-num" id="statModels">25+</div>
+          <div class="stat-num">25+</div>
           <div class="stat-label">Models trained</div>
         </div>
         <div class="stat">
-          <div class="stat-num" id="statDeploys">8</div>
+          <div class="stat-num">8</div>
           <div class="stat-label">Prod/Live demos</div>
         </div>
         <div class="stat">
-          <div class="stat-num" id="statAwards">3</div>
+          <div class="stat-num">3</div>
           <div class="stat-label">Awards / wins</div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ===== About Me ===== -->
   <section id="about" class="section alt">
-  <div class="container about-inner">
-    <div class="about-image">
-      <img src="assets/profile.jpg" alt="Tiffany Degbotse">
+    <div class="container about-inner">
+      <div class="about-image">
+        <img src="assets/profile.jpg" alt="Tiffany Degbotse">
+      </div>
+      <div class="about-text">
+        <h3>About Me</h3>
+        <p>
+          I’m a Machine Learning Engineer passionate about NLP, computer vision,
+          and building AI systems that have real-world impact. My work spans speech recognition,
+          retrieval-augmented generation, and video processing and augmentation.  
+        </p>
+        <p>
+          I enjoy bridging research and production, turning innovative ideas into reliable, usable systems.
+          Outside of work, I love to host interviews, podcasts, and speak with people making waves in their entrepreneurial journeys.
+        </p>
+      </div>
     </div>
-    <div class="about-text">
-      <h3>About Me</h3>
-      <p>
-        I’m a Machine Learning Engineer passionate about NLP, computer vision,
-        and building AI systems that have real-world impact. My work spans speech recognition,
-        retrieval-augmented generation, and video processing and augmentation.  
-      </p>
-      <p>
-        I enjoy bridging research and production, turning innovative ideas into reliable, usable systems.
-        Outside of work, I love to hold interviews, podacsts and speak to people making waves in their entrepreneuraljourneys.
-      </p>
-    </div>
-  </div>
-</section>
+  </section>
 
-
+  <!-- ===== Projects ===== -->
   <section id="projects" class="section">
     <div class="container">
       <div class="section-head">
@@ -99,6 +102,7 @@
     </div>
   </section>
 
+  <!-- ===== Skills ===== -->
   <section id="skills" class="section alt">
     <div class="container">
       <h3>Skills & Tools</h3>
@@ -139,6 +143,7 @@
     </div>
   </section>
 
+  <!-- ===== Writing ===== -->
   <section id="writing" class="section">
     <div class="container">
       <h3>Writing & Talks</h3>
@@ -146,24 +151,27 @@
     </div>
   </section>
 
+  <!-- ===== Contact ===== -->
   <section id="contact" class="section alt">
     <div class="container contact">
       <h3>Contact</h3>
       <p>Open to internships and research collaborations. The fastest way to reach me is via email.</p>
       <div class="cta-row">
-        <a class="btn primary" href="mailto:youremail@example.com">Email me</a>
+        <a class="btn primary" href="mailto:tiffany.degbotse@duke.edu">Email me</a>
         <a class="btn" href="https://cal.com/" target="_blank" rel="noopener">Book a call ↗</a>
       </div>
     </div>
   </section>
 
+  <!-- ===== Footer ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span>© <span id="year"></span> Your Name</span>
+      <span>© <span id="year"></span> Tiffany Degbotse</span>
       <span>Built with vanilla HTML/CSS/JS · Deployed on GitHub Pages</span>
     </div>
   </footer>
 
+  <!-- ===== Modal ===== -->
   <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-label="Project details">
     <div class="modal-content">
       <button class="modal-close" aria-label="Close">×</button>
@@ -171,6 +179,7 @@
     </div>
   </div>
 
+  <!-- ===== Scripts ===== -->
   <script src="projects.js"></script>
   <script src="script.js"></script>
 </body>
