@@ -6,6 +6,12 @@ const closeBtn = document.querySelector('.modal-close');
 const yearSpan = document.getElementById('year');
 yearSpan.textContent = new Date().getFullYear();
 
+const toggle = document.getElementById("themeToggle");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("light-theme");
+});
+
 // Theme toggle
 const themeToggle = document.getElementById('themeToggle');
 const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
