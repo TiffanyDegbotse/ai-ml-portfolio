@@ -9,7 +9,7 @@ const PROJECTS = [
     badges: [ "Ontology aligned"],
     links: {
       repo: "#", // optional
-      demo: "https://your-consilience-site-link.com", // replace with actual site link
+      partnership link: "https://deeptech.duke.edu/news/deep-tech-duke-funds-four-ai-metascience-projects-through-openai-partnership/", 
       case: "#"  // optional case study
     },
     details: `
