@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-  </section> <!-- ✅ properly closed hero -->
+  </section>
 
   <!-- ===== About Me ===== -->
   <section id="about" class="section alt">
@@ -64,7 +64,7 @@
         </p>
         <p>
           I enjoy bridging research and production, turning innovative ideas into reliable, usable systems.
-          Outside of work, I love hosting interviews and podcasts, and speaking with people making waves in their entrepreneurial journeys.
+          Outside of work, I love to host interviews, podcasts, and speak with people making waves in their entrepreneurial journeys.
         </p>
       </div>
     </div>
@@ -73,17 +73,59 @@
   <!-- ===== Projects ===== -->
   <section id="projects" class="section">
     <div class="container">
-      <div class="section-head">
-        <h3>Flagship Projects</h3>
-        <div class="filters">
-          <button class="chip is-active" data-filter="all">All</button>
-          <button class="chip" data-filter="NLP">NLP/LLMs</button>
-          <button class="chip" data-filter="CV">Vision</button>
-          <button class="chip" data-filter="TimeSeries">Time Series</button>
-          <button class="chip" data-filter="MLOps">MLOps</button>
+      <h3>Flagship Projects</h3>
+      <div class="list">
+
+        <div class="list-item">
+          <a href="https://github.com/TiffanyDegbotse/Capstone_Thesis" target="_blank" rel="noopener">
+            Capstone Thesis: AI-Enhanced Video Editing
+          </a>
+          <p>Award-winning thesis project implementing arbitrary video-to-video style transfer with RAFT-guided consistency, stabilization, and temporal evaluation.</p>
         </div>
+
+        <div class="list-item">
+          <a href="https://github.com/TiffanyDegbotse/Etsy-Rag-Generator" target="_blank" rel="noopener">
+            Etsy-RAG Generator
+          </a>
+          <p>CLI tool that generates Etsy digital product listings using Retrieval-Augmented Generation (RAG) with trending topics.</p>
+        </div>
+
+        <div class="list-item">
+          <a href="https://github.com/TiffanyDegbotse/rag-ml-chatbot" target="_blank" rel="noopener">
+            RAG-ML Chatbot
+          </a>
+          <p>Interactive chatbot built with RAG pipelines for domain-specific question answering, combining embeddings and large language models.</p>
+        </div>
+
+        <div class="list-item">
+          <a href="https://github.com/TiffanyDegbotse/weather-app" target="_blank" rel="noopener">
+            Weather App
+          </a>
+          <p>A lightweight Python-based weather forecasting app pulling real-time data via APIs and visualizing results.</p>
+        </div>
+
+        <div class="list-item">
+          <a href="https://github.com/TiffanyDegbotse/XAI_assignment4" target="_blank" rel="noopener">
+            XAI Assignment 4
+          </a>
+          <p>Exploratory notebook applying Explainable AI (XAI) techniques to interpret model predictions and highlight feature importance.</p>
+        </div>
+
+        <div class="list-item">
+          <a href="https://github.com/TiffanyDegbotse/XAI_assignment3" target="_blank" rel="noopener">
+            XAI Assignment 3
+          </a>
+          <p>Notebook demonstrating SHAP and LIME explanations for complex ML models.</p>
+        </div>
+
+        <div class="list-item">
+          <a href="https://github.com/TiffanyDegbotse/XAI_assignment2" target="_blank" rel="noopener">
+            XAI Assignment 2
+          </a>
+          <p>Notebook exploring feature attribution and explainability methods for supervised learning models.</p>
+        </div>
+
       </div>
-      <div id="projectsGrid" class="grid"></div>
     </div>
   </section>
 
@@ -156,16 +198,8 @@
     </div>
   </footer>
 
-  <!-- ===== Modal ===== -->
-  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-label="Project details">
-    <div class="modal-content">
-      <button class="modal-close" aria-label="Close">×</button>
-      <div id="modalBody"></div>
-    </div>
-  </div>
-
   <!-- ===== Scripts ===== -->
-  <script src="projects.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
+
