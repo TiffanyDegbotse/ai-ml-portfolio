@@ -26,8 +26,8 @@ const PROJECTS = [
     tags: ["Computer Vision", "Style Transfer"],
     badges: ["Award-winning", "Paper published"],
     links: {
-      repo: "#", 
-      demo: "https://link-to-your-award-page.com",  
+      repo: "https://github.com/TiffanyDegbotse/Capstone_Thesis", 
+      award: "https://ashesi.edu.gh/celebrating-excellence-student-research-and-innovation/",  
       case: "https://link-to-your-paper.com"       
     },
     details: `
