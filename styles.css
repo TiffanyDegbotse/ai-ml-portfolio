@@ -173,7 +173,12 @@ body {
   transition: transform .15s ease, box-shadow .15s ease;
 }
 .card:hover { transform: translateY(-4px); box-shadow: 0 16px 30px var(--shadow); }
-.card img { width:100%; aspect-ratio: 16/9; object-fit: cover; display:block; }
+.card img { 
+  width:100%; 
+  height:auto;
+  object-fit: contain; /* ensures full image shows */
+  display:block; 
+}
 .card-body { padding: 12px; }
 .card h4 { margin: 4px 0 2px; font-size: 18px; }
 .card p { margin: 0 0 8px; color: var(--muted); font-size: 14px; }
