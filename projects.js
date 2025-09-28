@@ -27,8 +27,7 @@ const PROJECTS = [
     badges: ["Award-winning", "Paper published"],
     links: {
       repo: "https://github.com/TiffanyDegbotse/Capstone_Thesis", 
-      award: "https://ashesi.edu.gh/celebrating-excellence-student-research-and-innovation/",  
-      case: "https://link-to-your-paper.com"       
+      award: "https://ashesi.edu.gh/celebrating-excellence-student-research-and-innovation/",       
     },
     details: `
       <p><strong>Award:</strong> Best Individual Thesis Award</p>
