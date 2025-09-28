@@ -22,36 +22,55 @@ body {
 
 .container { width: min(1100px, 92vw); margin: 0 auto; }
 
+/* ===== Header ===== */
 .site-header {
   position: sticky; top:0; z-index: 10;
-  background: #0b0c10; /* solid background */
+  background: #0b0c10; /* solid dark background */
   border-bottom: 1px solid var(--border);
 }
 .header-inner {
   display:flex; align-items:center; justify-content: space-between;
-  padding: 8px 0; /* reduced header height */
+  padding: 8px 0; /* slim header */
 }
-.brand { display:flex; gap:12px; align-items:center; }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .logo {
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
-  -webkit-background-clip: text; background-clip: text; color: transparent;
-  font-weight: 800; font-size: 20px; /* slightly smaller */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  font-size: 22px;
+  flex-shrink: 0;
 }
-.name-role h1 { margin:0; font-size: 16px; }
+.name-role {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+.name-role h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
 .name-role p {
-  margin: 2px 0 0 0;
-  color: #ffffff;     /* bright white text */
-  font-size: 15px;    /* larger */
-  font-weight: 600;   /* bold */
-  text-shadow: 0px 0px 6px rgba(0,0,0,0.6); /* subtle glow for contrast */
+  margin: 0;
+  color: #dcdcdc;   /* lighter gray for contrast */
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .nav a { color: var(--text); text-decoration:none; margin: 0 8px; font-size:14px; opacity:0.9; }
 .nav a:hover { opacity:1; }
 .theme-toggle { margin-left: 8px; padding:6px 10px; border-radius: 10px; border:1px solid var(--border); background: var(--card); color: var(--text); cursor:pointer; }
 
+/* ===== Hero ===== */
 .hero { 
-  padding: 80px 0 20px; /* more breathing room */
+  padding: 80px 0 20px;
   border-bottom: 1px solid var(--border); 
 }
 .hero-inner { display:grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items:center; }
@@ -70,6 +89,7 @@ body {
 .stat-num { font-weight:800; font-size: 28px; }
 .stat-label { color: var(--muted); font-size: 12px; }
 
+/* ===== Sections ===== */
 .section { padding: 36px 0; }
 .section.alt { background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .section h3 { margin:0 0 14px; font-size: 22px; }
@@ -79,6 +99,7 @@ body {
 .chip { padding: 6px 10px; border-radius: 999px; border:1px solid var(--border); background: var(--card); color: var(--text); font-size: 12px; cursor:pointer; }
 .chip.is-active, .chip:hover { border-color: var(--brand); }
 
+/* ===== Projects Grid ===== */
 .grid {
   display:grid; gap:16px;
   grid-template-columns: repeat(12, 1fr);
@@ -100,21 +121,44 @@ body {
 
 .card-actions { display:flex; gap:8px; flex-wrap:wrap; }
 
+/* ===== Skills ===== */
 .skills-grid {
   display:grid; gap:16px; grid-template-columns: repeat(4, 1fr);
 }
-.skills-grid h4 { margin:0 0 6px; }
-.skills-grid ul { margin:0; padding-left: 18px; color: var(--muted); }
+.skills-grid h4 {
+  font-size: 18px;
+  margin:0 0 6px;
+}
+.skills-grid ul {
+  margin:0; padding-left: 18px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
 
+/* ===== Writing ===== */
 .list { display:grid; gap:10px; }
-.list-item { background: var(--card); border:1px solid var(--border); border-radius: 12px; padding: 12px; }
-.list-item a { color: var(--brand); text-decoration: none; font-weight: 600; }
+.list-item {
+  background: var(--card);
+  border:1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 15px;
+}
+.list-item a {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 600;
+}
 
+/* ===== Contact ===== */
 .contact { text-align:center; }
 
+/* ===== Footer ===== */
 .site-footer { padding: 20px 0; color: var(--muted); font-size: 13px; }
 .footer-inner { display:flex; align-items:center; justify-content: space-between; }
 
+/* ===== Modal ===== */
 .modal { position: fixed; inset:0; display:none; place-items:center; background: rgba(0,0,0,0.5); }
 .modal[aria-hidden="false"] { display:grid; }
 .modal-content {
@@ -123,6 +167,7 @@ body {
 }
 .modal-close { float:right; font-size: 22px; border:none; background: transparent; color: var(--text); cursor:pointer; }
 
+/* ===== Responsive ===== */
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; }
   .grid .card { grid-column: span 12; }
