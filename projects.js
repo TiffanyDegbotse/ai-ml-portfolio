@@ -21,7 +21,7 @@ const PROJECTS = [
   {
     title: "Video-to-Video Style Transfer with RAFT-guided Consistency",
     category: "CV",
-    img: "assets/award_image.jpg", // replace with your award certificate image
+    img: "assets/award_image.png", // replace with your award certificate image
     blurb: "Best Individual Thesis Award-winning project on temporally consistent arbitrary video style transfer.",
     tags: ["Computer Vision", "Style Transfer"],
     badges: ["Award-winning", "Paper published"],
