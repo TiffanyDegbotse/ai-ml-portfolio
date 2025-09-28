@@ -24,27 +24,35 @@ body {
 
 .site-header {
   position: sticky; top:0; z-index: 10;
-  background: rgba(11,12,16,0.7); backdrop-filter: blur(8px);
+  background: #0b0c10; /* solid background */
   border-bottom: 1px solid var(--border);
 }
 .header-inner {
   display:flex; align-items:center; justify-content: space-between;
-  padding: 14px 0;
+  padding: 8px 0; /* reduced header height */
 }
-.brand { display:flex; gap:14px; align-items:center; }
+.brand { display:flex; gap:12px; align-items:center; }
 .logo {
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
   -webkit-background-clip: text; background-clip: text; color: transparent;
-  font-weight: 800; font-size: 24px;
+  font-weight: 800; font-size: 20px; /* smaller logo */
 }
-.name-role h1 { margin:0; font-size: 18px; }
-.name-role p { margin:0; color: var(--muted); font-size: 14px; }
+.name-role h1 { margin:0; font-size: 16px; }
+.name-role p {
+  margin: 2px 0 0 0; /* spacing under name */
+  color: #000000;     /* deep black text */
+  font-size: 16px;    /* larger size */
+  font-weight: 600;   /* bold */
+}
 
 .nav a { color: var(--text); text-decoration:none; margin: 0 8px; font-size:14px; opacity:0.9; }
 .nav a:hover { opacity:1; }
 .theme-toggle { margin-left: 8px; padding:6px 10px; border-radius: 10px; border:1px solid var(--border); background: var(--card); color: var(--text); cursor:pointer; }
 
-.hero { padding: 40px 0 10px; border-bottom: 1px solid var(--border); }
+.hero { 
+  padding: 80px 0 20px; /* more space at top */
+  border-bottom: 1px solid var(--border); 
+}
 .hero-inner { display:grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items:center; }
 .hero-copy h2 { font-size: 36px; margin:0 0 8px; }
 .hero-copy p { color: var(--muted); margin:0 0 18px; }
