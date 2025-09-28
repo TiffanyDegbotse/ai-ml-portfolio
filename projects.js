@@ -3,14 +3,14 @@ const PROJECTS = [
   {
     title: "Consilience: Real-time ASR + RAG for Interdisciplinary Meetings",
     category: "NLP",
-    img: "assets/consilience.png.png", // replace with screenshot of your site
-    blurb: "A voice-based, conversational LLM assistant that transcribes multi-speaker conversations, performs RAG retrieval, and functions as a research translator.In collaboration with Duke Deep Tech and OpenAI.",
+    img: "assets/consilience.png", // make sure this file exists
+    blurb: "A voice-based, conversational LLM assistant that transcribes multi-speaker conversations, performs RAG retrieval, and functions as a research translator. In collaboration with Duke Deep Tech and OpenAI.",
     tags: ["LLMs", "RAG", "Speech-to-Text"],
-    badges: [ "Ontology aligned"],
+    badges: ["Ontology aligned"],
     links: {
-      repo: "#", // optional
-      partnership: "https://deeptech.duke.edu/news/deep-tech-duke-funds-four-ai-metascience-projects-through-openai-partnership/",
-      case: "#"  // optional case study
+      repo: "#", 
+      partnership: "https://deeptech.duke.edu/news/deep-tech-duke-funds-four-ai-metascience-projects-through-openai-partnership/", 
+      case: "#"  
     },
     details: `
       <p><strong>Overview:</strong> Designed to enhance interdisciplinary collaboration by combining Whisper-based ASR, diarization, and retrieval-augmented generation (RAG).</p>
@@ -21,14 +21,14 @@ const PROJECTS = [
   {
     title: "Video-to-Video Style Transfer with RAFT-guided Consistency",
     category: "CV",
-    img: "assets/award_image.png", // replace with your award certificate image
+    img: "assets/award_image.png",
     blurb: "Best Individual Thesis Award-winning project on temporally consistent arbitrary video style transfer.",
     tags: ["Computer Vision", "Style Transfer"],
     badges: ["Award-winning", "Paper published"],
     links: {
-      repo: "#", // optional
-      demo: "https://link-to-your-award-page.com",  // link to award announcement
-      case: "https://link-to-your-paper.com"       // link to the paper
+      repo: "#", 
+      demo: "https://link-to-your-award-page.com",  
+      case: "https://link-to-your-paper.com"       
     },
     details: `
       <p><strong>Award:</strong> Best Individual Thesis Award</p>
@@ -39,12 +39,12 @@ const PROJECTS = [
   {
     title: "Twi Speech-to-Text Fine-Tuning",
     category: "NLP",
-    img: "assets/twi_project.jpg", // replace with a relevant image (dataset screenshot, waveform, etc.)
+    img: "assets/twi_project.jpg",
     blurb: "Fine-tuned wav2vec2.0 for Twi, achieving strong performance on a low-resource Ghanaian dialect.",
     tags: ["Speech Recognition", "Low-resource NLP"],
     badges: ["WER 16.8%", "20h speech data"],
     links: {
-      repo: "https://github.com/your-username/twi-speech-to-text", // replace with actual GitHub link
+      repo: "https://github.com/your-username/twi-speech-to-text", 
       demo: "#",
       case: "#"
     },
@@ -56,7 +56,7 @@ const PROJECTS = [
   }
 ];
 
-// Writing & talks (you can edit as needed)
+// Writing & talks
 const WRITING = [
   {
     title: "From Prototype to Production: An LLM RAG Playbook",
@@ -74,3 +74,4 @@ const WRITING = [
     venue: "Talk"
   }
 ];
+
