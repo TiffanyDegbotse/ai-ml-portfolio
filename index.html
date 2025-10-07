@@ -220,7 +220,27 @@
     </div>
   </footer>
 
+  <!-- ===== Scripts ===== -->
   <script>
+    // Theme toggle logic
+    const themeToggle = document.getElementById("themeToggle");
+    const body = document.body;
+
+    // Load saved theme
+    if (localStorage.getItem("theme") === "light") {
+      body.classList.add("light-theme");
+      themeToggle.textContent = "🌞";
+    }
+
+    // Toggle theme on click
+    themeToggle.addEventListener("click", () => {
+      body.classList.toggle("light-theme");
+      const isLight = body.classList.contains("light-theme");
+      themeToggle.textContent = isLight ? "🌞" : "🌓";
+      localStorage.setItem("theme", isLight ? "light" : "dark");
+    });
+
+    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
