@@ -198,26 +198,31 @@
 
   <!-- ===== Scripts ===== -->
   <script>
-    // Theme toggle logic
-    const themeToggle = document.getElementById("themeToggle");
-    const body = document.body;
+  // Theme toggle logic
+  const themeToggle = document.getElementById("themeToggle");
+  const body = document.body;
 
-    // Load saved theme
-    if (localStorage.getItem("theme") === "light") {
-      body.classList.add("light-theme");
-      themeToggle.textContent = "🌞";
-    }
+  // Set default to light if no theme is saved
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    body.classList.remove("light-theme");
+    themeToggle.textContent = "🌓";
+  } else {
+    // Default to light (includes both null and "light")
+    body.classList.add("light-theme");
+    themeToggle.textContent = "🌞";
+  }
 
-    // Toggle theme on click
-    themeToggle.addEventListener("click", () => {
-      body.classList.toggle("light-theme");
-      const isLight = body.classList.contains("light-theme");
-      themeToggle.textContent = isLight ? "🌞" : "🌓";
-      localStorage.setItem("theme", isLight ? "light" : "dark");
-    });
+  // Toggle theme on click
+  themeToggle.addEventListener("click", () => {
+    body.classList.toggle("light-theme");
+    const isLight = body.classList.contains("light-theme");
+    themeToggle.textContent = isLight ? "🌞" : "🌓";
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+  });
 
-    // Footer year
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  // Footer year
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
